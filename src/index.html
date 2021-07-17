@@ -31,14 +31,14 @@
             <div class="header-content">
                 <h1 class="header__title">CoreFriday</h1>
 
-                <div class="header__description">
+                <div class="header__description-content">
                     <p class="description__text">
                         Venha para black friday da CoreFriday temos descontos de
                         50%, 75% e até 80% ta imperdivel, cadraste ja seu email
                         para não perder nossas ofertas!
                     </p>
 
-                    <button class="button button-primary-light">
+                    <button class="button button__primary--light">
                         Cadastrar email
                     </button>
                 </div>
@@ -125,12 +125,45 @@
                 </section>
             </section>
 
-            <section class="resgister-container">
-                <div class="resgister-content">
-                    <h2>Não perca essa oportunidade!</h2>
+            <section class="register-container">
+                <div class="register__content">
+                    <h2 class="register__title">
+                        Não perca essa oportunidade!
+                    </h2>
+
+                    <form class="register__form">
+                        <fieldset class="form__fieldset">
+                            <legend class="form__title">Seja notificado</legend>
+
+                            <label class="sr-only" for="name">Nome:</label>
+                            <input type="text" id="name" placeholder="Nome" />
+
+                            <label class="sr-only">Email:</label>
+                            <input
+                                type="email"
+                                autocomplete="email"
+                                placeholder="Email"
+                            />
+
+                            <button
+                                class="button button__primary button--larger"
+                                type="submit"
+                            >
+                                Cadastrar email
+                            </button>
+                        </fieldset>
+                    </form>
                 </div>
             </section>
         </main>
+
+        <footer class="footer-container">
+            <div class="footer__copyright-content">
+                <p class="copyright__text">
+                    &copy; COPYRIGHT 2021 - CoreFriday
+                </p>
+            </div>
+        </footer>
 
         <script src="./js/main.js"></script>
     </body>

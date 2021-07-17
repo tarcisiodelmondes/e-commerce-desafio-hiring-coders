@@ -4,7 +4,7 @@
     box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
     border: none;
     font-weight: 700;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     transition: all 0.2s;
 }
 
@@ -12,12 +12,16 @@
     background-color: var(--color-primary-dark);
 }
 
-.button-primary-light {
+.button__primary {
+    background-color: var(--color-primary);
+    color: var(--color-light);
+}
+
+.button__primary--light {
     background-color: var(--color-primary-light);
     color: var(--color-light);
 }
 
-.button-primary {
-    background-color: var(--color-primary);
-    color: var(--color-light);
+.button--larger {
+    width: 100%;
 }

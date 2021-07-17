@@ -27,7 +27,7 @@
     text-align: center;
 }
 
-.header__description {
+.header__description-content {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -54,8 +54,11 @@
 .main__title {
     text-align: center;
     font-weight: 500;
+    font-size: 1.2rem;
     margin: 1rem 0 2.5rem 0;
 }
+
+/* Cards */
 
 .promo__cards {
     display: flex;
@@ -86,7 +89,7 @@
 }
 
 .card__description {
-    font-size: 1.1rem;
+    font-size: 1rem;
     max-width: 95%;
     white-space: nowrap;
     overflow: hidden;
@@ -96,6 +99,7 @@
 .card__price {
     margin-top: 1rem;
     font-weight: 700;
+    font-size: 1rem;
 }
 
 .card__price-promo {
@@ -108,6 +112,7 @@
 
 .card__price-truncated {
     margin-top: 1rem;
+    font-size: 0.8rem;
 }
 
 .price-truncated {
@@ -128,4 +133,71 @@
     font-weight: 500;
     display: inline-block;
     margin-top: 1rem;
+}
+
+/* Form */
+
+.register-container {
+    margin-top: 4rem;
+}
+
+.register__content {
+    width: 100%;
+}
+
+.register__title {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.register__form {
+    background-color: var(--color-light);
+    border-radius: 5px;
+    margin-top: 2rem;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+}
+
+.form__fieldset {
+    border: none;
+    text-align: center;
+}
+
+.form__fieldset input {
+    width: 100%;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--color-light-dark);
+}
+
+.form__title {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 1rem 0 1rem 0;
+}
+
+/* Footer */
+
+.footer-container {
+    width: 100%;
+    background-color: var(--color-gray);
+    height: 5rem;
+    margin-top: 3rem;
+}
+
+.footer__copyright-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.copyright__text {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--color-light);
 }
