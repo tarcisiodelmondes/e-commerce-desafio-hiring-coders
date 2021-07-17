@@ -201,3 +201,17 @@
     font-weight: 500;
     color: var(--color-light);
 }
+
+/* Desktop */
+
+@media (min-width: 1024px) {
+    .header__title {
+        text-align: left;
+        margin-left: 3.5rem;
+    }
+
+    .header__description-content {
+        width: 40%;
+        margin: 20rem auto;
+    }
+}
