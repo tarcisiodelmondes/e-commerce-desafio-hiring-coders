@@ -24,6 +24,7 @@
         <link rel="stylesheet" href="./css/cards.css" />
         <link rel="stylesheet" href="./css/header.css" />
         <link rel="stylesheet" href="./css/footer.css" />
+        <link rel="stylesheet" href="./css/modal.css" />
         <link rel="stylesheet" href="./css/home.css" />
 
         <title>CoreFriday</title>
@@ -39,9 +40,12 @@
                     não perder nossas ofertas!
                 </p>
 
-                <button class="button button__primary--light">
+                <a
+                    href="#cadastrar-email"
+                    class="button button__primary--light"
+                >
                     Cadastrar email
-                </button>
+                </a>
             </div>
         </header>
 
@@ -125,7 +129,7 @@
                 </section>
             </section>
 
-            <section class="register-container">
+            <section class="register-container" id="cadastrar-email">
                 <div class="register__content">
                     <h2 class="register__title">
                         Não perca essa oportunidade!
@@ -136,13 +140,20 @@
                             <legend class="form__title">Seja notificado</legend>
 
                             <label class="sr-only" for="name">Nome:</label>
-                            <input type="text" id="name" placeholder="Nome" />
+                            <input
+                                type="text"
+                                id="name"
+                                placeholder="Nome"
+                                required
+                            />
 
                             <label class="sr-only">Email:</label>
                             <input
                                 type="email"
+                                id="email"
                                 autocomplete="email"
                                 placeholder="Email"
+                                required
                             />
 
                             <button
@@ -157,6 +168,20 @@
             </section>
         </main>
 
+        <div class="modal" role="alert">
+            <div class="modal__content">
+                <div class="modal__close" onclick="toggleModal()">
+                    <span class="sr-only">Fechar modal</span>
+                </div>
+                <h2 class="modal__title">Parabéns seu email foi cadastrado</h2>
+
+                <p class="modal__text">
+                    Agora é só aguardar que avisaremos quando as promoções
+                    estiverem disponíveis
+                </p>
+            </div>
+        </div>
+
         <footer class="footer-container">
             <div class="footer__copyright-content">
                 <p class="copyright__text">
@@ -166,5 +191,6 @@
         </footer>
 
         <script src="./js/main.js"></script>
+        <script src="./js/modal.js"></script>
     </body>
 </html>
