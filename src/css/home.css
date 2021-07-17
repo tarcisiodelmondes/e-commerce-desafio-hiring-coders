@@ -2,21 +2,10 @@
 
 .header-container {
     height: 80vh;
-}
-
-.header__background-img {
-    height: 100%;
-    filter: blur(0.8px);
     background-image: url(../assets/header-background.jpg);
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
-}
-
-.header-content {
-    position: absolute;
-    top: 2.4rem;
-    left: 0;
 }
 
 .header__title {
@@ -25,6 +14,7 @@
     text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
     font-weight: 700;
     text-align: center;
+    padding-top: 2.5rem;
 }
 
 .header__description-content {
@@ -41,7 +31,6 @@
     font-weight: 500;
     text-align: center;
     padding: 1.5rem;
-    letter-spacing: 1.2;
     margin-bottom: 1.5rem;
 }
 
@@ -69,14 +58,11 @@
 
 .card-container {
     padding: 1rem;
+    margin-bottom: 2rem;
     background-color: var(--color-light);
     border-radius: 5px;
     box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.1);
     max-width: 350px;
-}
-
-.card-container:not(:last-child) {
-    margin-bottom: 2rem;
 }
 
 .card-container__img {
@@ -138,11 +124,12 @@
 /* Form */
 
 .register-container {
-    margin-top: 4rem;
+    margin-top: 2rem;
 }
 
 .register__content {
-    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 .register__title {
@@ -151,7 +138,7 @@
     font-weight: 500;
 }
 
-.register__form {
+.form {
     background-color: var(--color-light);
     border-radius: 5px;
     margin-top: 2rem;
@@ -177,7 +164,11 @@
 .form__title {
     font-size: 1.2rem;
     font-weight: 400;
-    margin: 1rem 0 1rem 0;
+    margin: 1rem 0 2rem 0;
+}
+
+.form button {
+    margin-top: 1rem;
 }
 
 /* Footer */
@@ -197,14 +188,21 @@
 }
 
 .copyright__text {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 500;
     color: var(--color-light);
 }
 
-/* Desktop */
+/* Media Queries */
 
-@media (min-width: 1024px) {
+@media (min-width: 540px) {
+    .header__description-content {
+        width: 65%;
+        margin: 18rem auto;
+    }
+}
+
+@media (min-width: 910px) {
     .header__title {
         text-align: left;
         margin-left: 3.5rem;
@@ -213,5 +211,14 @@
     .header__description-content {
         width: 40%;
         margin: 20rem auto;
+    }
+
+    .promo__cards {
+        justify-content: space-around;
+        flex-direction: row;
+    }
+
+    .form {
+        padding: 2rem 2rem;
     }
 }
