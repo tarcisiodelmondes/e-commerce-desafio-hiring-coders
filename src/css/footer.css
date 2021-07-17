@@ -1,0 +1,21 @@
+/* Footer */
+
+.footer-container {
+    width: 100%;
+    background-color: var(--color-gray);
+    height: 5rem;
+    margin-top: 3rem;
+}
+
+.footer__copyright-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.copyright__text {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--color-light);
+}
